@@ -89,8 +89,13 @@ python run_pipeline.py --only 03    # one step
 | 20 | `python src/20_catchments.py` | `data/processed/catchments.csv`: 4 basins (Spanish parts) and 4 key-reservoir headwaters built from HydroBASINS level 8; map `figures/fig_d2_catchments.png` |
 | 21 | `python src/21_chirps.py` | `data/processed/rainfall_monthly.csv`: CHIRPS monthly rainfall per catchment (1981 onwards) and SPI over 3-36 months (fitted on 1981-2016); `rainfall_summary.csv` |
 | 22 | `python src/22_climate_indices.py` | `data/processed/climate_indices.csv`: monthly NAO (NOAA) and WeMO (computed from NCEP-NCAR sea-level pressure) |
+| 30 | `python src/30_labels.py` | `data/interim/labels_monthly.csv`: State Index and drought state for every reservoir-month, transfer level for Entrepeñas + Buendía; `class_balance.csv`, `transfer_levels.csv` |
+| 31 | `python src/31_features.py` | `data/interim/features_monthly.csv`: storage lags, changes, rolling means, monthly averages, targets 1/3/6 months ahead; `seasonal_share.csv` |
+| 32 | `python src/32_build_dataset.py` | `data/processed/model_table.csv.gz` (final table with train/validation/test split, rainfall and climate columns when available) and `data_card.csv` |
 
-Shared modules: `paths.py` (file locations) and `study_area.py` (basins, key reservoirs, combined systems).
+Shared modules: `paths.py` (file locations), `study_area.py` (basins, key reservoirs, combined systems, split dates), `drought_rules.py` (State Index, drought states, transfer levels) and `features.py` (feature functions).
+
+Everything fitted on the data (State Index reference values, monthly averages, seasonal share) uses only the training years (1988-2016), so the validation and test periods never leak into the features or labels.
 
 ## Data sources
 

@@ -231,6 +231,10 @@ The code is organized as the GitHub repository `reservoir-drought-forecasting/` 
 | `20_catchments.py` | Catchment outlines from HydroBASINS (basins + key-reservoir headwaters) |
 | `21_chirps.py` | CHIRPS rainfall per catchment and SPI |
 | `22_climate_indices.py` | NAO and WeMO monthly indices |
+| `30_labels.py` | State Index + drought state (all series), transfer level (Entrepeñas + Buendía) |
+| `31_features.py` | Storage features and targets 1/3/6 months ahead |
+| `32_build_dataset.py` | Final modelling table, split and data card; joins rainfall/climate files if present |
+| `drought_rules.py`, `features.py` | Shared modules: official rules and feature functions |
 | `study_area.py` | Shared module: basins, key reservoirs, systems |
 
 The report builders in `reports/deliverable_1/` (`build_acm_docx.py`, `build_long_report.py`) now write `*_generated.docx` files, so they never overwrite the hand-edited Word versions. The hand-edited `Deliverable1_ACM.docx` stays in `project/deliverable_1/`, outside the repository.
@@ -261,8 +265,14 @@ Deliverable 2 covers **data selection, preprocessing and transformation** (ACM f
    - NAO and WeMO both correlate negatively with winter rainfall; WeMO strongest in the Júcar (-0.44), weakest in the Duero (-0.21).
    - The University of Barcelona WeMO site was down, so WeMO is computed from reanalysis pressure (ends Feb 2026).
    - Still open for Deliverable 3: AEMET gauges to check CHIRPS, SAIH/CEDEX inflows (transfer level 1), BOE declared transfer levels.
-4. **Transformation and features:** storage lags (1-12 months), rainfall accumulated over 3-36 months, SPI/SPEI, month as sine/cosine, seasonal share per reservoir.
-5. **Labels:** compute the State Index drought state and the transfer level for every month.
+4. **Transformation and features:** done (`31_features.py`; rainfall totals, SPI, NAO and WeMO joined by `32_build_dataset.py`).
+5. **Labels:** done (`30_labels.py`). Reference values from the training years only.
+   - Transfer levels since Oct 2014 match Deliverable 1 exactly (15 / 55 / 58 / 17 months).
+   - Seasonal share from training years: Duero 0.34, Tajo 0.13, Guadiana 0.07, Júcar 0.06 (same conclusion as Deliverable 1).
+   - **Alarcón + Contreras is Normal in 100% of test months (2021-26)** and Normal/Pre-alert only in validation, so drought classification must be evaluated on all 114 reservoirs together (test: 60% Normal, 22% Pre-alert, 8% Alert, 10% Emergency).
+   - Entrepeñas + Buendía: 25% Emergency in validation (2017-20), no drought in test.
+   - 13 reservoirs started reporting too late for 10 training years in some calendar months; their State Index is left missing.
+   - `model_table.csv.gz` is built after both branches are merged and includes the rainfall and climate columns.
 6. **Exploration:** correlations between accumulated rainfall and storage (check the ~8-month lag), class balance, first clustering of reservoirs.
 7. **GitHub repository** (25% of the grade): structure done (`reservoir-drought-forecasting/`); push to the team GitHub account and keep adding Deliverable 2 scripts to `src/`.
 8. **Tools:** try BigML (course tool) alongside Python, since variety of tools is graded.
