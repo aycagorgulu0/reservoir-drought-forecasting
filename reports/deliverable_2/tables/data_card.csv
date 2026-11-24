@@ -1,0 +1,55 @@
+column,role,source,unit,dtype,missing_pct
+basin,identifier,BD-Embalses,,object,0.0
+role,identifier,BD-Embalses,,object,0.0
+reservoir,identifier,BD-Embalses,,object,0.0
+is_system,identifier,BD-Embalses,,bool,0.0
+month,time / bookkeeping,derived,,datetime64[ns],0.0
+year,time / bookkeeping,derived,,int64,0.0
+month_num,time / bookkeeping,derived,,int64,0.0
+split,time / bookkeeping,derived,,object,0.0
+month_status,time / bookkeeping,derived,,object,0.0
+capacity_max_hm3,static feature,BD-Embalses (seasonal_share: training years),hm3,float64,0.0
+hydro_flag,static feature,BD-Embalses (seasonal_share: training years),,float64,0.0
+seasonal_share,static feature,BD-Embalses (seasonal_share: training years),,float64,2.7
+pct,storage feature,derived from BD-Embalses,% of max capacity,float64,0.0
+stored_mean_hm3,storage,BD-Embalses,hm3,float64,0.0
+stored_first_hm3,storage,BD-Embalses,hm3,float64,0.0
+si,label (current month),official rules (drought_rules.py),,float64,3.4
+drought_state,label (current month),official rules (drought_rules.py),,float64,3.4
+transfer_level,label (current month),official rules (drought_rules.py),,float64,99.3
+pct_clim,storage feature,derived from BD-Embalses,% of max capacity,float64,0.4
+pct_anom,storage feature,derived from BD-Embalses,% of max capacity,float64,0.4
+pct_lag1,storage feature,derived from BD-Embalses,% of max capacity,float64,0.2
+pct_lag2,storage feature,derived from BD-Embalses,% of max capacity,float64,0.5
+pct_lag3,storage feature,derived from BD-Embalses,% of max capacity,float64,0.7
+pct_lag4,storage feature,derived from BD-Embalses,% of max capacity,float64,1.0
+pct_lag5,storage feature,derived from BD-Embalses,% of max capacity,float64,1.2
+pct_lag6,storage feature,derived from BD-Embalses,% of max capacity,float64,1.4
+pct_lag7,storage feature,derived from BD-Embalses,% of max capacity,float64,1.7
+pct_lag8,storage feature,derived from BD-Embalses,% of max capacity,float64,1.9
+pct_lag9,storage feature,derived from BD-Embalses,% of max capacity,float64,2.1
+pct_lag10,storage feature,derived from BD-Embalses,% of max capacity,float64,2.4
+pct_lag11,storage feature,derived from BD-Embalses,% of max capacity,float64,2.6
+pct_lag12,storage feature,derived from BD-Embalses,% of max capacity,float64,2.8
+pct_lag24,storage feature,derived from BD-Embalses,% of max capacity,float64,5.6
+pct_lag36,storage feature,derived from BD-Embalses,% of max capacity,float64,8.5
+pct_diff1,storage feature,derived from BD-Embalses,% of max capacity,float64,0.2
+pct_diff3,storage feature,derived from BD-Embalses,% of max capacity,float64,0.7
+pct_diff12,storage feature,derived from BD-Embalses,% of max capacity,float64,2.8
+pct_mean3,storage feature,derived from BD-Embalses,% of max capacity,float64,0.2
+pct_mean6,storage feature,derived from BD-Embalses,% of max capacity,float64,0.7
+pct_mean12,storage feature,derived from BD-Embalses,% of max capacity,float64,1.9
+pct_mean24,storage feature,derived from BD-Embalses,% of max capacity,float64,4.2
+pct_mean36,storage feature,derived from BD-Embalses,% of max capacity,float64,6.3
+pct_std12,storage feature,derived from BD-Embalses,% of max capacity,float64,1.9
+month_sin,storage feature,derived from BD-Embalses,,float64,0.0
+month_cos,storage feature,derived from BD-Embalses,,float64,0.0
+pct_h1,target,derived from label / storage h months ahead,% of max capacity,float64,0.2
+pct_h3,target,derived from label / storage h months ahead,% of max capacity,float64,0.7
+pct_h6,target,derived from label / storage h months ahead,% of max capacity,float64,1.4
+state_h1,target,derived from label / storage h months ahead,,float64,3.6
+state_h3,target,derived from label / storage h months ahead,,float64,4.0
+state_h6,target,derived from label / storage h months ahead,,float64,4.7
+transfer_h1,target,derived from label / storage h months ahead,,float64,99.3
+transfer_h3,target,derived from label / storage h months ahead,,float64,99.3
+transfer_h6,target,derived from label / storage h months ahead,,float64,99.3
