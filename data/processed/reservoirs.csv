@@ -1,0 +1,150 @@
+basin,role,reservoir,capacity_latest_hm3,capacity_max_hm3,capacity_changes,hydro_flag,first_date,last_date,weeks,weeks_imputed,weeks_surcharge,active,key_reservoir
+Duero,reference,"Agavanzal, Nª Sª de",36.0,36.0,0,1,1999-03-02,2026-10-27,1444,0,0,True,False
+Duero,reference,Aguilar,247.0,247.0,0,0,1988-01-05,2026-10-27,2026,0,0,True,False
+Duero,reference,Aldeadávila,114.0,115.0,1,1,1988-01-05,2026-10-27,2026,0,0,True,False
+Duero,reference,Almendra,2649.0,2649.0,1,1,1988-01-05,2026-10-27,2026,0,0,True,False
+Duero,reference,Arlanzón,22.0,23.0,2,0,1988-01-05,2026-10-27,2026,0,54,True,False
+Duero,reference,Barrios de Luna,311.0,311.0,1,0,1988-01-05,2026-10-27,2026,0,0,True,False
+Duero,reference,Burgomillodo,14.0,15.0,1,1,1988-01-05,2026-10-27,2026,2,0,True,False
+Duero,reference,Camporredondo,69.0,70.0,1,0,1988-01-05,2026-10-27,2026,0,0,True,False
+Duero,reference,Casares de Arbas,37.0,37.0,1,0,1988-01-05,2026-10-27,2026,6,0,True,False
+Duero,reference,Castro,27.0,38.0,2,1,1988-01-05,2026-10-27,2026,4,66,True,False
+Duero,reference,Castro de las Cogotas,58.0,59.0,2,0,1999-03-02,2026-10-27,1444,0,1,True,False
+Duero,reference,Cernadilla,255.0,255.0,0,1,1988-01-05,2026-10-27,2026,0,0,True,False
+Duero,reference,Cervera,10.0,11.0,1,0,1988-01-05,2026-10-27,2026,3,0,True,False
+Duero,reference,Compuerto,95.0,95.0,0,0,1988-01-05,2026-10-27,2026,0,0,True,False
+Duero,reference,Cuerda del Pozo,249.0,249.0,2,0,1988-01-05,2026-10-27,2026,1,1,True,False
+Duero,reference,Irueña,110.0,110.0,0,0,2023-10-03,2026-10-27,161,0,0,True,False
+Duero,reference,Linares del Arroyo,54.0,58.0,2,0,1988-01-05,2026-10-27,2026,0,0,True,False
+Duero,reference,"Pontón Alto, El",7.0,7.0,0,0,2009-11-10,2026-10-27,886,1,40,True,False
+Duero,reference,Porma-(Juan Benet),318.0,318.0,0,0,1988-01-05,2026-10-27,2026,0,0,True,False
+Duero,reference,Puente Porto,23.0,23.0,0,1,1988-01-05,2026-10-27,2026,3,2,True,False
+Duero,reference,Requejada,59.0,66.0,2,0,1988-01-05,2026-10-27,2026,0,0,True,False
+Duero,reference,Riaño,641.0,664.0,2,0,1989-12-05,2026-10-27,1926,0,0,True,False
+Duero,reference,Ricobayo,1145.0,1200.0,2,1,1988-01-05,2026-10-27,2026,0,1,True,False
+Duero,reference,Rábanos,8.0,8.0,0,1,1988-01-05,2026-10-27,2026,2,0,True,False
+Duero,reference,San José,6.0,6.0,0,0,1988-01-05,2026-10-27,2026,0,0,True,False
+Duero,reference,Santa Teresa,496.0,496.0,0,0,1988-01-05,2026-10-27,2026,0,0,True,False
+Duero,reference,Saucelle,181.0,181.0,1,1,1988-01-05,2026-10-27,2026,1,16,True,False
+Duero,reference,Serones,6.0,6.0,0,0,1988-01-05,2026-10-27,2026,1,0,True,False
+Duero,reference,Valparaíso,169.0,169.0,2,1,1989-12-05,2026-10-27,1926,0,0,True,False
+Duero,reference,"Vencías, Las",5.0,5.0,1,1,1988-01-05,2026-10-27,2026,9,0,True,False
+Duero,reference,Villagonzalo,6.0,6.0,0,0,1988-01-05,2026-10-27,2026,0,0,True,False
+Duero,reference,Villalcampo,66.0,66.0,1,1,1988-01-05,2026-10-27,2026,1,0,True,False
+Duero,reference,Villameca,19.0,20.0,1,0,1988-01-05,2026-10-27,2026,0,0,True,False
+Duero,reference,Águeda,15.0,24.0,3,0,1988-01-05,2026-10-27,2026,1,14,True,False
+Duero,reference,Úzquiza,75.0,75.0,0,0,1989-12-05,2026-10-27,1926,1,0,True,False
+Guadiana,study,"Aguijón, El",11.0,11.0,0,0,1999-03-02,2026-10-27,1444,0,4,True,False
+Guadiana,study,Alange,852.0,880.0,1,0,1990-02-13,2026-10-27,1916,0,0,True,False
+Guadiana,study,Alcollarín,52.0,52.0,0,0,2021-10-05,2026-10-27,265,0,0,True,False
+Guadiana,study,Andévalo,634.0,634.0,0,0,2005-05-03,2026-10-27,631,0,0,True,False
+Guadiana,study,Boquerón,6.0,6.0,0,0,1992-04-28,2026-10-27,1801,2,0,True,False
+Guadiana,study,Brovales,7.0,7.0,0,0,1988-01-05,2026-10-27,2026,1,0,True,False
+Guadiana,study,Búrdalo,79.0,79.0,0,0,2021-10-05,2026-10-27,265,0,0,True,False
+Guadiana,study,Canchales,26.0,26.0,1,0,1992-04-28,2026-10-27,1800,10,57,True,False
+Guadiana,study,Cancho del Fresno,15.0,15.0,0,0,1992-04-28,2026-10-27,1801,0,0,True,False
+Guadiana,study,Castilseras,5.0,5.0,0,0,1999-03-02,2017-04-18,947,3,0,False,False
+Guadiana,study,Chanza,338.0,386.0,2,0,1990-02-13,2026-10-27,1916,0,0,True,False
+Guadiana,study,Cijara,1505.0,1505.0,0,0,1988-01-05,2026-10-27,2026,0,0,True,False
+Guadiana,study,Cornalbo,3.0,11.0,2,0,1988-01-05,2026-10-27,2026,6,0,True,False
+Guadiana,study,Cubilar,6.0,10.0,1,0,2003-04-22,2026-10-27,1228,5,0,True,False
+Guadiana,study,El Vicario,32.0,32.0,2,0,1988-01-05,2026-10-27,2026,2,4,True,False
+Guadiana,study,García de Sola,554.0,554.0,1,0,1988-01-05,2026-10-27,2026,0,4,True,False
+Guadiana,study,Gargáligas,21.0,21.0,0,0,2003-04-22,2026-10-27,1228,0,0,True,False
+Guadiana,study,Gasset,39.0,42.0,3,0,1988-01-05,2026-10-27,2026,0,3,True,False
+Guadiana,study,Horno Tejero,24.0,24.0,1,0,1992-04-28,2026-10-27,1801,0,0,True,False
+Guadiana,study,La Cabezuela,43.0,43.0,1,0,1992-04-28,2026-10-27,1801,1,107,True,False
+Guadiana,study,La Colada,58.0,58.0,0,0,2023-10-03,2026-10-27,161,0,0,True,False
+Guadiana,study,La Serena,3219.0,3219.0,1,0,1990-02-13,2026-10-27,1916,1,1,True,False
+Guadiana,study,Llerena,8.0,9.0,1,0,1999-03-02,2026-10-27,1444,5,1,True,False
+Guadiana,study,Los Molinos,34.0,34.0,1,0,1988-01-05,2026-10-27,2026,1,2,True,False
+Guadiana,study,Montijo,11.0,11.0,1,0,1988-01-05,2026-10-27,2026,10,17,True,False
+Guadiana,study,Nogales,18.0,18.0,1,0,1999-03-02,2026-10-27,1444,0,0,True,False
+Guadiana,study,Orellana,808.0,824.0,2,0,1988-01-05,2026-10-27,2026,0,1,True,False
+Guadiana,study,Peñarroya,51.0,51.0,2,0,1988-01-05,2026-10-27,2026,0,117,True,False
+Guadiana,study,Piedra Aguda,16.0,16.0,0,0,1988-01-05,2026-10-27,2026,0,0,True,False
+Guadiana,study,Proserpina,5.0,5.0,2,0,1988-01-05,2026-10-27,2012,36,0,True,False
+Guadiana,study,Pto. Vallehermoso,7.0,7.0,0,0,1992-04-28,2026-10-27,1801,0,0,True,False
+Guadiana,study,Ruecas,42.0,44.0,2,0,1995-10-31,2026-10-27,1618,0,1,True,False
+Guadiana,study,Sierra Brava,233.0,233.0,1,0,1995-10-31,2026-10-27,1618,0,3,True,False
+Guadiana,study,Tentudia,5.0,5.0,0,0,1992-04-28,2026-10-27,1801,1,0,True,False
+Guadiana,study,Torre de Abrahán,183.0,183.0,3,0,1988-01-05,2026-10-27,2026,0,26,True,False
+Guadiana,study,Valuengo,20.0,20.0,1,0,1988-01-05,2026-10-27,2026,1,3,True,False
+Guadiana,study,Vega del Jabalón,34.0,34.0,1,0,1992-04-28,2026-10-27,1801,2,3,True,False
+Guadiana,study,Villalba de los Barros,106.0,106.0,0,0,2021-10-05,2026-10-27,265,0,0,True,False
+Guadiana,study,Villar del Rey,131.0,134.0,3,0,1988-01-05,2026-10-27,2026,1,6,True,False
+Guadiana,study,Zújar,302.0,723.0,3,0,1988-01-05,2026-10-27,2026,0,3,True,False
+Júcar,study,Alarcón,1118.0,1118.0,1,0,1988-01-05,2026-10-27,2026,0,0,True,True
+Júcar,study,Algar,6.0,6.0,0,0,2009-11-10,2026-10-27,886,3,0,True,False
+Júcar,study,Amadorio,16.0,16.0,0,0,1988-01-05,2026-10-27,2026,2,0,True,False
+Júcar,study,Arenós,137.0,137.0,2,0,1988-01-05,2026-10-27,2026,0,0,True,False
+Júcar,study,Arquillo de San Blas,21.0,22.0,1,0,1988-01-05,2026-10-27,2026,0,0,True,False
+Júcar,study,Bellús,69.0,69.0,0,0,1999-03-02,2026-10-27,1444,1,0,True,False
+Júcar,study,Benagéber,221.0,228.0,1,0,1988-01-05,2026-10-27,2026,0,10,True,False
+Júcar,study,Beniarrés,27.0,30.0,1,0,1988-01-05,2026-10-27,2026,0,0,True,False
+Júcar,study,Buseo,8.0,8.0,0,0,1988-01-05,2026-10-27,2026,1,0,True,False
+Júcar,study,Contreras,361.0,874.0,2,0,1988-01-05,2026-10-27,2026,0,0,True,True
+Júcar,study,Cortes II,118.0,118.0,1,1,1988-01-05,2026-10-27,2026,1,0,True,False
+Júcar,study,El Naranjero,29.0,29.0,1,0,1990-05-08,2026-10-27,1715,6,0,True,False
+Júcar,study,Escalona,99.0,99.0,1,0,1999-03-02,2026-10-27,1444,0,0,True,False
+Júcar,study,Forata,37.0,37.0,0,0,1988-01-05,2026-10-27,2026,0,0,True,False
+Júcar,study,Guadalest,13.0,13.0,0,0,1988-01-05,2026-10-27,2026,1,0,True,False
+Júcar,study,La Muela,20.0,29.0,1,1,1990-05-08,2026-10-27,1715,34,0,True,False
+Júcar,study,La Toba,10.0,11.0,1,1,1988-01-05,2026-10-27,2026,1,0,True,False
+Júcar,study,Loriguilla,73.0,73.0,1,0,1988-01-05,2026-10-27,2026,0,0,True,False
+Júcar,study,María Cristina,18.0,20.0,1,0,1988-01-05,2026-10-27,2026,2,0,True,False
+Júcar,study,Regajo,6.0,6.0,0,0,1988-01-05,2026-10-27,2026,3,0,True,False
+Júcar,study,Sichar,49.0,49.0,0,0,1988-01-05,2026-10-27,2026,1,0,True,False
+Júcar,study,Tous - La Ribera,379.0,379.0,1,0,1999-03-02,2026-10-27,1444,0,0,True,False
+Júcar,study,Ulldecona,11.0,11.0,0,0,1988-01-05,2026-10-27,2026,2,0,True,False
+Tajo,study,Aceña,24.0,24.0,0,0,1990-04-24,2026-10-27,1906,0,0,True,False
+Tajo,study,Alcorlo,180.0,180.0,0,0,1988-01-05,2026-10-27,2026,0,0,True,False
+Tajo,study,Alcántara,3160.0,3162.0,1,1,1988-01-05,2026-10-27,2026,0,0,True,False
+Tajo,study,Almoguera,7.0,7.0,0,1,1988-01-05,2026-10-27,2026,0,0,True,False
+Tajo,study,"Atance, El",35.0,35.0,0,0,2005-10-04,2026-10-27,1100,0,0,True,False
+Tajo,study,"Atazar, El",426.0,426.0,0,0,1988-01-05,2026-10-27,2026,0,0,True,False
+Tajo,study,Azután,113.0,113.0,0,1,1988-01-05,2026-10-27,2026,0,0,True,False
+Tajo,study,Baños,41.0,41.0,0,0,2000-07-11,2026-10-27,1373,0,0,True,False
+Tajo,study,Beleña,53.0,53.0,1,0,1988-01-05,2026-10-27,2026,0,0,True,False
+Tajo,study,Bolarque,31.0,31.0,0,1,1988-01-05,2026-10-27,2026,0,0,True,False
+Tajo,study,Borbollon,88.0,88.0,1,0,1988-01-05,2026-10-27,2026,0,0,True,False
+Tajo,study,Buendía,1705.0,1705.0,1,0,1988-01-05,2026-10-27,2026,0,0,True,True
+Tajo,study,Burguillo - Puente Nuevo,201.0,217.0,2,0,1988-01-05,2026-10-27,2026,0,0,True,False
+Tajo,study,Castrejón,44.0,44.0,1,1,1988-01-05,2026-10-27,2026,0,13,True,False
+Tajo,study,"Castro, El",8.0,8.0,0,0,1988-01-05,2026-10-27,2026,7,0,True,False
+Tajo,study,Cazalegas,7.0,11.0,1,0,1988-01-05,2026-10-27,2026,0,0,True,False
+Tajo,study,Cedillo,260.0,260.0,0,1,1988-01-05,2026-10-27,2026,0,0,True,False
+Tajo,study,Cáceres - Guadiloba,20.0,20.0,0,0,1988-01-05,2026-10-27,2026,2,0,True,False
+Tajo,study,Entrepeñas,813.0,886.0,2,0,1988-01-05,2026-10-27,2026,0,0,True,True
+Tajo,study,Finisterre,133.0,133.0,0,0,1988-01-05,2026-10-27,2026,1,0,True,False
+Tajo,study,Gabriel y Galán,911.0,924.0,1,0,1988-01-05,2026-10-27,2026,0,0,True,False
+Tajo,study,Guajaraz,18.0,18.0,0,0,1988-01-05,2026-10-27,2026,1,0,True,False
+Tajo,study,Guijo de Granadilla,13.0,13.0,0,1,1988-01-05,2026-10-27,2026,2,0,True,False
+Tajo,study,"Jarosa, La",7.0,7.0,0,0,1988-01-05,2026-10-27,2026,1,0,True,False
+Tajo,study,Jerte - Plasencia,59.0,59.0,0,0,1988-04-05,2026-10-27,2013,1,0,True,False
+Tajo,study,Molino de Chincha,6.0,6.0,0,1,1988-01-05,2026-10-27,2026,1,0,True,False
+Tajo,study,Navacerrada,11.0,11.0,0,0,1988-01-05,2026-10-27,2026,0,0,True,False
+Tajo,study,Navalcán,34.0,34.0,0,0,1988-01-05,2026-10-27,2026,0,0,True,False
+Tajo,study,Navamuño,14.0,14.0,0,0,1990-04-24,2026-10-27,1906,1,0,True,False
+Tajo,study,"Pardo, El",43.0,45.0,2,0,1988-01-05,2026-10-27,2026,0,0,True,False
+Tajo,study,Picadas,15.0,15.0,0,0,1988-01-05,2026-10-27,2026,0,0,True,False
+Tajo,study,Pinilla,38.0,38.0,0,0,1988-01-05,2026-10-27,2026,2,0,True,False
+Tajo,study,Portaje,23.0,23.0,0,0,1988-04-05,2026-10-27,2013,0,0,True,False
+Tajo,study,"Portiña, La",5.0,5.0,0,0,1988-01-05,2026-10-27,2026,0,0,True,False
+Tajo,study,Puentes Viejas,53.0,53.0,0,0,1988-01-05,2026-10-27,2026,0,0,True,False
+Tajo,study,Pálmaces,31.0,31.0,0,0,1988-01-05,2026-10-27,2026,2,0,True,False
+Tajo,study,Riosequillo,50.0,50.0,0,0,1988-01-05,2026-10-27,2026,0,0,True,False
+Tajo,study,Rivera de Gata,49.0,49.0,0,0,1990-04-24,2026-10-27,1906,0,3,True,False
+Tajo,study,Rosarito,82.0,93.0,2,0,1988-01-05,2026-10-27,2026,2,0,True,False
+Tajo,study,Salor,14.0,14.0,0,0,1988-01-05,2026-10-27,2026,0,0,True,False
+Tajo,study,San Juan,138.0,148.0,2,0,1988-01-05,2026-10-27,2026,0,0,True,False
+Tajo,study,Santillana,91.0,91.0,0,0,1988-01-05,2026-10-27,2026,0,0,True,False
+Tajo,study,"Tajera, La",64.0,70.0,1,0,1995-10-31,2026-10-27,1618,1,0,True,False
+Tajo,study,Torcón,7.0,7.0,0,0,1988-01-05,2026-10-27,2026,3,0,True,False
+Tajo,study,Torrejón (Tajo - Tietar),188.0,188.0,0,1,1988-01-05,2026-10-27,2026,0,0,True,False
+Tajo,study,"Vado, El",56.0,56.0,0,0,1988-01-05,2026-10-27,2026,0,0,True,False
+Tajo,study,Valdecañas,1446.0,1446.0,0,1,1988-01-05,2026-10-27,2026,0,0,True,False
+Tajo,study,Valdeobispo,53.0,53.0,0,0,1988-01-05,2026-10-27,2026,1,0,True,False
+Tajo,study,Valmayor,124.0,124.0,0,0,1988-01-05,2026-10-27,2026,0,0,True,False
+Tajo,study,"Vellón,El-(Pedrezuela)",41.0,41.0,0,0,1988-01-05,2026-10-27,2026,0,0,True,False
+Tajo,study,"Villar, El",23.0,23.0,0,0,1988-01-05,2026-10-27,2026,1,0,True,False

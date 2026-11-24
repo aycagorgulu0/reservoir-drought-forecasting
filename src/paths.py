@@ -15,8 +15,13 @@ PROCESSED = DATA / "processed"  # final modelling tables
 FIGURES = ROOT / "figures"
 REPORTS = ROOT / "reports"
 
-MDB = RAW / "BD-Embalses.mdb"
-WEEKLY_CSV = INTERIM / "reservoirs_spain_weekly.csv"
+D2_TABLES = REPORTS / "deliverable_2" / "tables"  # small tables quoted in the Deliverable 2 report
 
-for _d in (RAW, INTERIM, PROCESSED, FIGURES):
+MDB = RAW / "BD-Embalses.mdb"
+WEEKLY_CSV = INTERIM / "reservoirs_spain_weekly.csv"          # 01: all of Spain, as converted
+WEEKLY_CLEAN_CSV = INTERIM / "reservoirs_weekly_clean.csv"    # 10: study area, cleaned
+MONTHLY_CSV = INTERIM / "reservoirs_monthly.csv"              # 11: monthly series + systems
+RESERVOIRS_CSV = PROCESSED / "reservoirs.csv"                 # 10: one row per reservoir (metadata)
+
+for _d in (RAW, INTERIM, PROCESSED, FIGURES, D2_TABLES):
     _d.mkdir(parents=True, exist_ok=True)
