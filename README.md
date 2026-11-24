@@ -84,6 +84,10 @@ python run_pipeline.py --only 03    # one step
 | 02 | `python src/02_basic_stats.py` | Prints dataset statistics |
 | 03 | `python src/03_make_plots.py` | Exploratory figures `figures/fig1-5_*.png` |
 | 04 | `python src/04_make_acm_figures.py` | Column-width figures for the ACM reports |
+| 10 | `python src/10_clean.py` | `data/interim/reservoirs_weekly_clean.csv` (study + reference basins, cleaned and flagged), `data/processed/reservoirs.csv` (one row per reservoir), `reports/deliverable_2/tables/cleaning_log.csv` |
+| 11 | `python src/11_monthly.py` | `data/interim/reservoirs_monthly.csv` (monthly first / mean / last storage per reservoir, plus the Entrepeñas + Buendía and Alarcón + Contreras systems), `reports/deliverable_2/tables/monthly_summary.csv` |
+
+Shared modules: `paths.py` (file locations) and `study_area.py` (basins, key reservoirs, combined systems).
 
 ## Data sources
 

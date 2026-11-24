@@ -84,7 +84,28 @@ Entrepeñas + Buendía together ranged from **124 hm³ (October 1995)** to **1,6
 | Storage above capacity (flood surcharge or changed capacity) | 1,264 | 90 | Cap at 100% or flag |
 | Missing values | 2 | | Interpolate |
 
-The cleaned CSV still contains all original rows; the placeholder rows are only removed in the plotting scripts.
+These counts are for all of Spain. Step `10_clean.py` (Deliverable 2) cleans only the study and reference basins; the result is below.
+
+### Cleaning results (Deliverable 2, step 10, Tajo + Guadiana + Júcar + Duero)
+| Step | Rows affected | Reservoirs |
+|---|---|---|
+| Keep the 4 basins (285,622 of 724,217 rows) | 438,595 dropped | 149 kept |
+| Drop the isolated week of 6 Oct 1987 (12-week gap after it) | 2 | |
+| Drop placeholder rows (capacity = 0) | 10,006 | |
+| Storage 100-120% of capacity: cap at 100%, flag `flag_surcharge` | 584 | |
+| Storage > 120% of capacity (up to 7x, data errors): set missing | 69 | |
+| Single zero between positive readings: set missing | 38 | |
+| One-week spikes (>20% of capacity away and back): set missing | 119 | |
+| Linear interpolation of gaps <= 4 weeks, flag `flag_imputed` | 211 filled | |
+| Values that could not be filled: dropped | 15 | |
+| **Clean weekly table** | **275,599 rows** | **149 (114 study + 35 Duero)** |
+
+The 2 missing values counted in Deliverable 1 are in the Ebro (Pajares), outside the study area.
+
+**New finding, capacity changes:** 73 reservoirs report a different capacity at some point. The most important is **Contreras: 874 hm³ until 2009, 852 hm³ until Nov 2019, then 361 hm³**. Its storage never exceeds 361 hm³ after 2019, so this is an operating limit, not an error. Both `pct_full` (reported capacity) and `pct_full_max` (largest capacity ever reported) are kept. The drought labels should use storage in hm³ or `pct_full_max`, otherwise the cut would look like a jump in % full. Entrepeñas also changes: 886 → 835 hm³ (1988) → 813 hm³ (2019).
+
+### Monthly table (step 11)
+63,606 reservoir-months (Jan 1988 to Oct 2026) plus 466 months for each combined system. 99.7% of months are observed; 6 are interpolated (gaps <= 2 months) and 190 stay missing (three long gaps: Andévalo 2005-2014, El Naranjero and La Muela 1990-1993). Entrepeñas + Buendía start-of-month storage ranges from 127 hm³ (Nov 1995) to 1,673 hm³ (Apr 2026).
 
 ---
 
@@ -205,6 +226,9 @@ The code is organized as the GitHub repository `reservoir-drought-forecasting/` 
 | `02_basic_stats.py` | Prints dataset statistics (size, missing values, per-basin totals, key reservoirs) |
 | `03_make_plots.py` | Creates the five exploratory figures |
 | `04_make_acm_figures.py` | Creates the two column-sized figures used in the ACM report |
+| `10_clean.py` | Selects the 4 basins and cleans the weekly series (see cleaning results) |
+| `11_monthly.py` | Weekly to monthly (first / mean / last storage) and the two combined systems |
+| `study_area.py` | Shared module: basins, key reservoirs, systems |
 
 The report builders in `reports/deliverable_1/` (`build_acm_docx.py`, `build_long_report.py`) now write `*_generated.docx` files, so they never overwrite the hand-edited Word versions. The hand-edited `Deliverable1_ACM.docx` stays in `project/deliverable_1/`, outside the repository.
 
@@ -226,8 +250,8 @@ Requirements: Python 3.11 with pandas, numpy, matplotlib, pyodbc (and the Micros
 
 Deliverable 2 covers **data selection, preprocessing and transformation** (ACM format, 2-8 pages), plus an interview with the professors.
 
-1. **Cleaning:** remove the 18,867 placeholder rows, cap or flag storage above capacity, interpolate the 2 missing values.
-2. **Aggregation:** weekly to monthly storage per reservoir; build combined series for Entrepeñas + Buendía and Alarcón + Contreras.
+1. **Cleaning:** done (`10_clean.py`, branch `d2-preprocessing`).
+2. **Aggregation:** done (`11_monthly.py`).
 3. **Enrichment:**
    - Register for an AEMET OpenData API key and a Copernicus account (ERA5); download rainfall and temperature for the catchments.
    - Download NAO (NOAA) and WeMO indices.
