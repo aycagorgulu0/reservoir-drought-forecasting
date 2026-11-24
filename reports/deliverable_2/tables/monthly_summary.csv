@@ -1,0 +1,6 @@
+role,basin,reservoirs,reservoir_months,observed,interpolated,missing,low_coverage
+reference,Duero,35,15282,15282,0,0,0
+study,Guadiana,40,15103,14991,2,110,12
+study,Júcar,23,9998,9914,4,80,4
+study,Tajo,51,23223,23223,0,0,4
+all,all,149,63606,63410,6,190,20
