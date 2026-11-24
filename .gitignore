@@ -1,0 +1,28 @@
+# Data that is too large or can be rebuilt (see data/README.md)
+data/raw/*
+data/interim/*
+!data/raw/.gitkeep
+!data/interim/.gitkeep
+*.mdb
+*.accdb
+
+# Copyrighted papers (cite them in docs/literature_review.md instead)
+literature/
+
+# Generated report drafts and Word lock files
+reports/**/*_generated.docx
+~$*
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.ipynb_checkpoints/
+
+# Editors and OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini

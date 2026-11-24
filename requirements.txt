@@ -1,0 +1,5 @@
+pandas>=2.2
+numpy>=2.0
+matplotlib>=3.9
+pyodbc>=5.0        # only for reading the original .mdb (needs the MS Access ODBC driver)
+python-docx>=1.1   # only for the report builder scripts
