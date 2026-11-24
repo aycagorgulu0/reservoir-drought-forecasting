@@ -1,0 +1,13 @@
+group,split,months,Normal,Pre-alert,Alert,Emergency
+Study reservoirs (114),train,34932,54.7,21.7,11.1,12.4
+Study reservoirs (114),validation,5140,49.0,29.4,13.9,7.7
+Study reservoirs (114),test,7490,59.9,22.0,8.4,9.8
+Study reservoirs (114),all,47562,54.9,22.6,11.0,11.5
+Alarcón + Contreras,train,348,48.6,17.5,15.5,18.4
+Alarcón + Contreras,validation,48,50.0,50.0,0.0,0.0
+Alarcón + Contreras,test,70,100.0,0.0,0.0,0.0
+Alarcón + Contreras,all,466,56.4,18.2,11.6,13.7
+Entrepeñas + Buendía,train,348,46.8,19.3,21.3,12.6
+Entrepeñas + Buendía,validation,48,6.2,60.4,8.3,25.0
+Entrepeñas + Buendía,test,70,57.1,42.9,0.0,0.0
+Entrepeñas + Buendía,all,466,44.2,27.0,16.7,12.0

@@ -31,6 +31,9 @@ WEEKLY_CSV = INTERIM / "reservoirs_spain_weekly.csv"          # 01: all of Spain
 WEEKLY_CLEAN_CSV = INTERIM / "reservoirs_weekly_clean.csv"    # 10: study area, cleaned
 MONTHLY_CSV = INTERIM / "reservoirs_monthly.csv"              # 11: monthly series + systems
 RESERVOIRS_CSV = PROCESSED / "reservoirs.csv"                 # 10: one row per reservoir (metadata)
+LABELS_CSV = INTERIM / "labels_monthly.csv"                   # 30: drought state + transfer level
+FEATURES_CSV = INTERIM / "features_monthly.csv"               # 31: storage features + targets
+MODEL_TABLE = PROCESSED / "model_table.csv.gz"                # 32: final modelling table
 
 for _d in (RAW, INTERIM, PROCESSED, FIGURES, D2_TABLES):
     _d.mkdir(parents=True, exist_ok=True)
