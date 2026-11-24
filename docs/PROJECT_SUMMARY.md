@@ -189,7 +189,9 @@ The code is organized as the GitHub repository `reservoir-drought-forecasting/` 
 | `data/raw/` | `BD-Embalses.mdb`, the original MITECO database (not in git, 213 MB) |
 | `data/interim/` | `reservoirs_spain_weekly.csv`: clean CSV, English columns, numeric values, `pct_full` (not in git, 37 MB) |
 | `data/processed/` | Final modelling tables (Deliverable 2) |
-| `src/` | Pipeline scripts, numbered in run order; `paths.py` holds all shared paths |
+| `src/` | Numbered pipeline steps (first digit = KDD phase: 0x selection, 1x preprocessing, 2x integration, 3x transformation, 4x mining, 5x evaluation) and shared modules without numbers (`paths.py`; later `drought_rules.py`, `features.py`) |
+| `run_pipeline.py` | Runs every numbered step in order (`--list`, `--from NN`, `--only NN`) |
+| `notebooks/` | Exploration and results notebooks; they only read `data/processed/`, one owner per notebook |
 | `figures/` | All figures |
 | `reports/deliverable_1/` | `Deliverable1.pdf` (final, 3 pages) and the scripts that generated its drafts |
 | `reports/deliverable_2/` | Deliverable 2 report |
@@ -206,7 +208,7 @@ The code is organized as the GitHub repository `reservoir-drought-forecasting/` 
 
 The report builders in `reports/deliverable_1/` (`build_acm_docx.py`, `build_long_report.py`) now write `*_generated.docx` files, so they never overwrite the hand-edited Word versions. The hand-edited `Deliverable1_ACM.docx` stays in `project/deliverable_1/`, outside the repository.
 
-Requirements: Python 3.11 with pandas, numpy, matplotlib, pyodbc (and the Microsoft Access ODBC driver), python-docx (`requirements.txt`).
+Requirements: Python 3.11 with pandas, numpy, matplotlib, pyodbc (and the Microsoft Access ODBC driver), python-docx, jupyter, scikit-learn (`requirements.txt`).
 
 ### Figures (`figures/`)
 | File | Shows |

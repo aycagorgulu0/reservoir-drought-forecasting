@@ -21,8 +21,10 @@ These reservoirs are *hyperannual*: storage changes much more between years than
 │   ├── raw/          original downloads, never edited (not in git, see data/README.md)
 │   ├── interim/      converted and cleaned intermediate files (not in git)
 │   └── processed/    final modelling tables
-├── src/              pipeline scripts, numbered in the order they run
+├── src/              pipeline: numbered steps + shared modules (see below)
 │   └── paths.py      shared paths used by every script
+├── notebooks/        exploration and results; they only read data/processed (see notebooks/README.md)
+├── run_pipeline.py   runs every step in order
 ├── figures/          figures produced by the scripts
 ├── reports/
 │   ├── deliverable_1/  problem definition (PDF + script that generated its first draft)
@@ -49,7 +51,31 @@ The raw data is not stored in this repository because it is too large for GitHub
 
 ## Running the pipeline
 
-Run the scripts from the repository root, in order:
+One command reproduces everything:
+
+```bash
+python run_pipeline.py              # all steps
+python run_pipeline.py --list       # show the steps
+python run_pipeline.py --from 10    # start at a given step
+python run_pipeline.py --only 03    # one step
+```
+
+### How `src/` is organized
+
+- **Numbered scripts** (`NN_name.py`) are the pipeline steps. Each one is short: it reads its input, calls functions, and writes its output. The first digit is the KDD phase:
+
+  | Range | KDD phase |
+  |---|---|
+  | `0x` | Data selection and understanding |
+  | `1x` | Preprocessing (cleaning, monthly aggregation) |
+  | `2x` | Integration of other sources (rainfall, climate indices) |
+  | `3x` | Transformation (labels, features) |
+  | `4x` | Data mining (models, clustering) |
+  | `5x` | Evaluation |
+
+- **Modules without a number** (`paths.py`, and later e.g. `drought_rules.py`, `features.py`) hold reusable code. They are imported by the steps and notebooks, so every formula is written only once.
+
+### Current steps
 
 | Step | Script | Output |
 |---|---|---|
