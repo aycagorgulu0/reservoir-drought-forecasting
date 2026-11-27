@@ -24,12 +24,13 @@ from scipy import stats
 from scipy.io import netcdf_file
 
 from paths import CATCHMENT_SHAPES, CHIRPS_NC, D2_TABLES, RAINFALL_CSV
+from study_area import TRAIN_END
 
 LON, LAT = (-7.6, 1.3), (37.9, 43.4)   # box around all catchments
 URL = ("https://iridl.ldeo.columbia.edu/SOURCES/.UCSB/.CHIRPS/.v2p0/.monthly/.global/.precipitation/"
        f"X/{LON[0]}/{LON[1]}/RANGEEDGES/Y/{LAT[0]}/{LAT[1]}/RANGEEDGES/data.nc")
 SPI_WINDOWS = [3, 6, 12, 24, 36]
-FIT_END = pd.Timestamp("2016-12-01")   # end of the training years (same as TRAIN_END in step 30)
+FIT_END = pd.Timestamp(TRAIN_END)   # SPI fitted on the training years only
 
 # 1. Download once
 if not CHIRPS_NC.exists():

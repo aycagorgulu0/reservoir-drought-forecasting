@@ -17,12 +17,9 @@ import unicodedata
 import numpy as np
 import pandas as pd
 
-from paths import D2_TABLES, FEATURES_CSV, MODEL_TABLE, PROCESSED
+from paths import CATCHMENTS_CSV, CLIMATE_CSV, D2_TABLES, FEATURES_CSV, MODEL_TABLE, RAINFALL_CSV
 from study_area import KEY_RESERVOIRS, SYSTEMS
 
-CATCHMENTS_CSV = PROCESSED / "catchments.csv"         # written by step 20 (d2-rainfall)
-RAINFALL_CSV = PROCESSED / "rainfall_monthly.csv"     # written by step 21 (d2-rainfall)
-CLIMATE_CSV = PROCESSED / "climate_indices.csv"       # written by step 22 (d2-rainfall)
 PRECIP_WINDOWS = [3, 6, 12, 24, 36]
 
 
@@ -64,7 +61,7 @@ if RAINFALL_CSV.exists() and CATCHMENTS_CSV.exists():
     print(f"Rainfall joined: {len(rain_cols)} columns, coverage {df['precip_mm'].notna().mean():.1%}")
 else:
     rain_cols = []
-    print("Rainfall files not found (d2-rainfall not merged yet): table built without rainfall")
+    print("Rainfall files not found (run steps 20-21 first): table built without rainfall")
 
 # Climate indices (optional)
 if CLIMATE_CSV.exists():
