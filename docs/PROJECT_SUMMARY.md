@@ -228,6 +228,9 @@ The code is organized as the GitHub repository `reservoir-drought-forecasting/` 
 | `04_make_acm_figures.py` | Creates the two column-sized figures used in the ACM report |
 | `10_clean.py` | Selects the 4 basins and cleans the weekly series (see cleaning results) |
 | `11_monthly.py` | Weekly to monthly (first / mean / last storage) and the two combined systems |
+| `20_catchments.py` | Catchment outlines from HydroBASINS (basins + key-reservoir headwaters) |
+| `21_chirps.py` | CHIRPS rainfall per catchment and SPI |
+| `22_climate_indices.py` | NAO and WeMO monthly indices |
 | `study_area.py` | Shared module: basins, key reservoirs, systems |
 
 The report builders in `reports/deliverable_1/` (`build_acm_docx.py`, `build_long_report.py`) now write `*_generated.docx` files, so they never overwrite the hand-edited Word versions. The hand-edited `Deliverable1_ACM.docx` stays in `project/deliverable_1/`, outside the repository.
@@ -252,11 +255,12 @@ Deliverable 2 covers **data selection, preprocessing and transformation** (ACM f
 
 1. **Cleaning:** done (`10_clean.py`, branch `d2-preprocessing`).
 2. **Aggregation:** done (`11_monthly.py`).
-3. **Enrichment:**
-   - Register for an AEMET OpenData API key and a Copernicus account (ERA5); download rainfall and temperature for the catchments.
-   - Download NAO (NOAA) and WeMO indices.
-   - Look for inflow data (SAIH Tajo, CEDEX) for the transfer level 1 condition.
-   - Collect the declared transfer levels from the BOE orders to validate our labels.
+3. **Enrichment:** rainfall and climate done (branch `d2-rainfall`, steps 20-22).
+   - Catchments from HydroBASINS level 8: Tajo 52,126 km² (upstream of Alcántara), Guadiana 48,748 km² (upstream of Badajoz), Duero 72,081 km² (upstream of Saucelle), Júcar district 36,808 km² (8 river basins); headwaters Entrepeñas 3,946, Buendía 3,459, Alarcón 3,008, Contreras 3,941 km².
+   - CHIRPS rainfall Jan 1981 - Sep 2026: 417-573 mm/year by basin; driest 12-month SPI in 1995 (Júcar), 2005 (Tajo, Guadiana), 2017 (Duero).
+   - NAO and WeMO both correlate negatively with winter rainfall; WeMO strongest in the Júcar (-0.44), weakest in the Duero (-0.21).
+   - The University of Barcelona WeMO site was down, so WeMO is computed from reanalysis pressure (ends Feb 2026).
+   - Still open for Deliverable 3: AEMET gauges to check CHIRPS, SAIH/CEDEX inflows (transfer level 1), BOE declared transfer levels.
 4. **Transformation and features:** storage lags (1-12 months), rainfall accumulated over 3-36 months, SPI/SPEI, month as sine/cosine, seasonal share per reservoir.
 5. **Labels:** compute the State Index drought state and the transfer level for every month.
 6. **Exploration:** correlations between accumulated rainfall and storage (check the ~8-month lag), class balance, first clustering of reservoirs.
