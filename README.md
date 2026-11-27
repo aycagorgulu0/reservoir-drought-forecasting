@@ -86,6 +86,9 @@ python run_pipeline.py --only 03    # one step
 | 04 | `python src/04_make_acm_figures.py` | Column-width figures for the ACM reports |
 | 10 | `python src/10_clean.py` | `data/interim/reservoirs_weekly_clean.csv` (study + reference basins, cleaned and flagged), `data/processed/reservoirs.csv` (one row per reservoir), `reports/deliverable_2/tables/cleaning_log.csv` |
 | 11 | `python src/11_monthly.py` | `data/interim/reservoirs_monthly.csv` (monthly first / mean / last storage per reservoir, plus the Entrepeñas + Buendía and Alarcón + Contreras systems), `reports/deliverable_2/tables/monthly_summary.csv` |
+| 20 | `python src/20_catchments.py` | `data/processed/catchments.csv`: 4 basins (Spanish parts) and 4 key-reservoir headwaters built from HydroBASINS level 8; map `figures/fig_d2_catchments.png` |
+| 21 | `python src/21_chirps.py` | `data/processed/rainfall_monthly.csv`: CHIRPS monthly rainfall per catchment (1981 onwards) and SPI over 3-36 months (fitted on 1981-2016); `rainfall_summary.csv` |
+| 22 | `python src/22_climate_indices.py` | `data/processed/climate_indices.csv`: monthly NAO (NOAA) and WeMO (computed from NCEP-NCAR sea-level pressure) |
 
 Shared modules: `paths.py` (file locations) and `study_area.py` (basins, key reservoirs, combined systems).
 
@@ -95,7 +98,10 @@ Shared modules: `paths.py` (file locations) and `study_area.py` (basins, key res
 |---|---|---|
 | MITECO, *Base de datos del Boletín Hidrológico* (BD-Embalses) | Weekly reservoir storage, 1988-2026 | Open data, Spanish Government |
 
-More sources (CHIRPS rainfall, NAO and WeMO climate indices) will be added in Deliverable 2.
+| CHIRPS v2.0 monthly rainfall, 0.05° (via IRI Data Library) | Rainfall per catchment, SPI | Public domain (CHC, UCSB) |
+| HydroBASINS v1c, Europe, level 8 (HydroSHEDS) | Catchment outlines | Free for non-commercial use |
+| NOAA CPC monthly NAO index | Climate pattern | Public domain |
+| NCEP-NCAR reanalysis sea-level pressure (via IRI) | WeMO index (San Fernando minus Padua) | Public domain |
 
 ## Deliverables
 
