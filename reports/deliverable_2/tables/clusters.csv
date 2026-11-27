@@ -1,0 +1,13 @@
+k,silhouette
+2,0.359
+3,0.321
+4,0.346
+5,0.334
+6,0.32
+
+best_k,2
+ward_vs_kmeans_ari,0.16
+
+cluster,reservoirs,seasonal_share,acf_24,interannual_sd,duero,tajo,guadiana,júcar
+0,79,0.06,0.16,16.79,10,23,26,20
+1,60,0.31,-0.09,13.26,21,28,9,2

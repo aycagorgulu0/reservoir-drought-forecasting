@@ -1,0 +1,5 @@
+basin,reservoirs,seasonal_share,acf_12,acf_24,best_spi_median,share_best_24_36
+Duero,33,0.34,0.08,-0.02,12.0,0.09
+Tajo,51,0.13,0.1,0.0,12.0,0.31
+Guadiana,35,0.07,0.39,0.1,24.0,0.51
+Júcar,22,0.06,0.55,0.31,30.0,0.68
