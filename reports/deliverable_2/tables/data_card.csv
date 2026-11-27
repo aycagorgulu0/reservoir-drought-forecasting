@@ -53,3 +53,22 @@ state_h6,target,derived from label / storage h months ahead,,float64,4.7
 transfer_h1,target,derived from label / storage h months ahead,,float64,99.3
 transfer_h3,target,derived from label / storage h months ahead,,float64,99.3
 transfer_h6,target,derived from label / storage h months ahead,,float64,99.3
+precip_mm,rainfall feature,CHIRPS v2.0,mm,float64,0.2
+spi_3,rainfall feature,CHIRPS v2.0,SPI,float64,0.2
+spi_6,rainfall feature,CHIRPS v2.0,SPI,float64,0.2
+spi_12,rainfall feature,CHIRPS v2.0,SPI,float64,0.2
+spi_24,rainfall feature,CHIRPS v2.0,SPI,float64,0.2
+spi_36,rainfall feature,CHIRPS v2.0,SPI,float64,0.2
+precip_sum3,rainfall feature,CHIRPS v2.0,mm,float64,0.2
+precip_sum6,rainfall feature,CHIRPS v2.0,mm,float64,0.2
+precip_sum12,rainfall feature,CHIRPS v2.0,mm,float64,0.2
+precip_sum24,rainfall feature,CHIRPS v2.0,mm,float64,0.2
+precip_sum36,rainfall feature,CHIRPS v2.0,mm,float64,0.2
+nao,climate feature,NOAA (NAO) / Univ. Barcelona (WeMO),index,float64,0.0
+wemo,climate feature,NOAA (NAO) / Univ. Barcelona (WeMO),index,float64,1.9
+nao_mean3,climate feature,NOAA (NAO) / Univ. Barcelona (WeMO),index,float64,0.0
+nao_mean6,climate feature,NOAA (NAO) / Univ. Barcelona (WeMO),index,float64,0.0
+nao_mean12,climate feature,NOAA (NAO) / Univ. Barcelona (WeMO),index,float64,0.0
+wemo_mean3,climate feature,NOAA (NAO) / Univ. Barcelona (WeMO),index,float64,1.9
+wemo_mean6,climate feature,NOAA (NAO) / Univ. Barcelona (WeMO),index,float64,1.9
+wemo_mean12,climate feature,NOAA (NAO) / Univ. Barcelona (WeMO),index,float64,1.9
