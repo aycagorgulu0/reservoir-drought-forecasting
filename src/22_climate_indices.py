@@ -21,12 +21,13 @@ import pandas as pd
 from scipy.io import netcdf_file
 
 from paths import CLIMATE_CSV, INDICES_DIR
+from study_area import TRAIN_END
 
 NAO_URL = "https://www.cpc.ncep.noaa.gov/products/precip/CWlink/pna/norm.nao.monthly.b5001.current.ascii"
 SLP_URL = ("https://iridl.ldeo.columbia.edu/SOURCES/.NOAA/.NCEP-NCAR/.CDAS-1/.MONTHLY/.Intrinsic/.MSL/"
            ".pressure/X/({lon})/VALUES/Y/({lat})/VALUES/T/(Jan%201950)/last/RANGE/data.nc")
 STATIONS = {"padua": ("11.48E", "45.40N"), "san_fernando": ("6.21W", "36.28N")}
-START, FIT_START, FIT_END = "1981-01-01", "1981-01-01", "2016-12-01"
+START, FIT_START, FIT_END = "1981-01-01", "1981-01-01", TRAIN_END
 
 INDICES_DIR.mkdir(parents=True, exist_ok=True)
 
