@@ -1,0 +1,9 @@
+catchment_id,name,type,basin,reservoirs,area_km2
+tajo,Tajo (Spanish part),basin,Tajo,,52126
+guadiana,Guadiana (Spanish part),basin,Guadiana,,48748
+jucar,Júcar district (8 river basins),basin,Júcar,,36808
+duero,Duero (Spanish part),basin,Duero,,72081
+entrepenas,Entrepeñas headwater,headwater,Tajo,Entrepeñas,3946
+buendia,Buendía headwater,headwater,Tajo,Buendía,3459
+alarcon,Alarcón headwater,headwater,Júcar,Alarcón,3008
+contreras,Contreras headwater,headwater,Júcar,Contreras,3941

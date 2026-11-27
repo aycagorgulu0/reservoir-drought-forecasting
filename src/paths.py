@@ -17,6 +17,15 @@ REPORTS = ROOT / "reports"
 
 D2_TABLES = REPORTS / "deliverable_2" / "tables"  # small tables quoted in the Deliverable 2 report
 
+# Rainfall and climate (steps 20-22)
+HYDROBASINS_DIR = RAW / "hydrobasins"                           # HydroBASINS Europe level 8 (download)
+CHIRPS_NC = RAW / "chirps" / "chirps_monthly_spain.nc"          # CHIRPS v2.0 monthly, Spain box
+INDICES_DIR = RAW / "indices"                                   # NAO text file, sea-level pressure
+CATCHMENT_SHAPES = INTERIM / "catchments.geojson"               # 20: catchment polygons
+CATCHMENTS_CSV = PROCESSED / "catchments.csv"                   # 20: one row per catchment
+RAINFALL_CSV = PROCESSED / "rainfall_monthly.csv"               # 21: rainfall + SPI per catchment
+CLIMATE_CSV = PROCESSED / "climate_indices.csv"                 # 22: NAO + WeMO per month
+
 MDB = RAW / "BD-Embalses.mdb"
 WEEKLY_CSV = INTERIM / "reservoirs_spain_weekly.csv"          # 01: all of Spain, as converted
 WEEKLY_CLEAN_CSV = INTERIM / "reservoirs_weekly_clean.csv"    # 10: study area, cleaned
